@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kids New Arrivals – AJ COLLECTION</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produits.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>AJ COLLECTION</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="nouveauté_homme.html">Men</a>
+            <a href="nouveauté_femme.html">Women</a>
+            <a class="active">Kids</a>
+            <a href="panier.html">🛒</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Kids New Arrivals</h2>
+
+        <div class="filters">
+            <button onclick="filter('all')">All</button>
+            <button onclick="filter('vetements')">Clothing</button>
+            <button onclick="filter('chaussures')">Shoes</button>
+            <button onclick="filter('accessoires')">Accessories</button>
+        </div>
+
+        <div class="grid">
+
+            <!-- CLOTHING -->
+            <div class="product-card vetements">
+                <div class="product-image"><img src="images/enfants/vetements/tshirt1.jpg" alt="Kids T-shirt"></div>
+                <div class="product-info">
+                    <h3>T-shirt</h3>
+                    <p>₹1,500</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids T-shirt',price:1500})">Add</button>
+                        <button class="pay" onclick="payNow('Kids T-shirt',1500)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card vetements">
+                <div class="product-image"><img src="images/enfants/vetements/pantalon1.jpg" alt="Kids Pants"></div>
+                <div class="product-info">
+                    <h3>Pants</h3>
+                    <p>₹2,100</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Pants',price:2100})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Pants',2100)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card vetements">
+                <div class="product-image"><img src="images/enfants/vetements/robe1.jpg" alt="Kids Dress"></div>
+                <div class="product-info">
+                    <h3>Dress</h3>
+                    <p>₹2,700</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Dress',price:2700})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Dress',2700)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card vetements">
+                <div class="product-image"><img src="images/enfants/vetements/sweat1.jpg" alt="Kids Sweatshirt"></div>
+                <div class="product-info">
+                    <h3>Sweatshirt</h3>
+                    <p>₹2,400</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Sweatshirt',price:2400})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Sweatshirt',2400)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card vetements">
+                <div class="product-image"><img src="images/enfants/vetements/ensemble1.jpg" alt="Kids Outfit Set"></div>
+                <div class="product-info">
+                    <h3>Outfit Set</h3>
+                    <p>₹3,000</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Outfit Set',price:3000})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Outfit Set',3000)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SHOES -->
+            <div class="product-card chaussures">
+                <div class="product-image"><img src="images/enfants/chaussures/baskets1.jpg" alt="Kids Sneakers"></div>
+                <div class="product-info">
+                    <h3>Sneakers</h3>
+                    <p>₹3,000</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Sneakers',price:3000})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Sneakers',3000)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card chaussures">
+                <div class="product-image"><img src="images/enfants/chaussures/sandales1.jpg" alt="Kids Sandals"></div>
+                <div class="product-info">
+                    <h3>Sandals</h3>
+                    <p>₹1,800</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Sandals',price:1800})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Sandals',1800)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card chaussures">
+                <div class="product-image"><img src="images/enfants/chaussures/scolaires1.jpg" alt="Kids School Shoes"></div>
+                <div class="product-info">
+                    <h3>School Shoes</h3>
+                    <p>₹3,600</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids School Shoes',price:3600})">Add</button>
+                        <button class="pay" onclick="payNow('Kids School Shoes',3600)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card chaussures">
+                <div class="product-image"><img src="images/enfants/chaussures/bottines1.jpg" alt="Kids Boots"></div>
+                <div class="product-info">
+                    <h3>Boots</h3>
+                    <p>₹4,200</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Boots',price:4200})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Boots',4200)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card chaussures">
+                <div class="product-image"><img src="images/enfants/chaussures/tongs1.jpg" alt="Kids Flip Flops"></div>
+                <div class="product-info">
+                    <h3>Flip Flops</h3>
+                    <p>₹1,200</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Flip Flops',price:1200})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Flip Flops',1200)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACCESSORIES -->
+            <div class="product-card accessoires">
+                <div class="product-image"><img src="images/enfants/accessoires/sac1.jpg" alt="Kids Backpack"></div>
+                <div class="product-info">
+                    <h3>Backpack</h3>
+                    <p>₹2,400</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Backpack',price:2400})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Backpack',2400)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card accessoires">
+                <div class="product-image"><img src="images/enfants/accessoires/casquette1.jpg" alt="Kids Cap"></div>
+                <div class="product-info">
+                    <h3>Cap</h3>
+                    <p>₹900</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Cap',price:900})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Cap',900)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card accessoires">
+                <div class="product-image"><img src="images/enfants/accessoires/montre1.jpg" alt="Kids Watch"></div>
+                <div class="product-info">
+                    <h3>Watch</h3>
+                    <p>₹2,100</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Watch',price:2100})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Watch',2100)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card accessoires">
+                <div class="product-image"><img src="images/enfants/accessoires/chaussettes1.jpg" alt="Kids Socks"></div>
+                <div class="product-info">
+                    <h3>Socks</h3>
+                    <p>₹600</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Socks',price:600})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Socks',600)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card accessoires">
+                <div class="product-image"><img src="images/enfants/accessoires/bonnet1.jpg" alt="Kids Beanie"></div>
+                <div class="product-info">
+                    <h3>Beanie</h3>
+                    <p>₹1,050</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Beanie',price:1050})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Beanie',1050)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>AJ COLLECTION</h3>
+                <p>Simple. Classy. Trendy.<br>Fashion for men, women and kids.</p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="homme.html">Men</a></li>
+                    <li><a href="femme.html">Women</a></li>
+                    <li><a href="enfant.html">Kids</a></li>
+                    <li><a href="panier.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Information</h4>
+                <ul>
+                    <li>Fast delivery</li>
+                    <li>Easy returns</li>
+                    <li>Secure payment</li>
+                    <li><a href="login.html">My account</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Contact</h4>
+                <p>📱 WhatsApp<br>
+                    <a href="https://wa.me/919886400949">+91 98864 00949</a>
+                </p>
+                <p>✉️ Email<br>contact@ajcollection.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 AJ COLLECTION – All rights reserved
+        </div>
+    </footer>
+
+    <script src="produits.js"></script>
+
+</body>
+
+</html>

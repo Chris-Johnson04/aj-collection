@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accessories – AJ COLLECTION</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produits.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>AJ COLLECTION</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="homme.html">Men</a>
+            <a href="femme.html">Women</a>
+            <a href="enfant.html">Kids</a>
+            <a href="panier.html">🛒</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>All Accessories</h2>
+
+        <!-- FILTERS -->
+        <div class="filters">
+            <button onclick="filterAccessories('all')">All</button>
+            <button onclick="filterAccessories('homme')">Men</button>
+            <button onclick="filterAccessories('femme')">Women</button>
+            <button onclick="filterAccessories('enfants')">Kids</button>
+        </div>
+
+        <div class="grid">
+
+            <!-- MEN -->
+            <div class="product-card homme">
+                <div class="product-image">
+                    <img src="images/homme/accessoires/ceinture1.jpg" alt="Men Belt">
+                </div>
+                <div class="product-info">
+                    <h3>Men Belt</h3>
+                    <p>₹1,500</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Men Belt',price:1500})">Add</button>
+                        <button class="pay" onclick="payNow('Men Belt',1500)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card homme">
+                <div class="product-image">
+                    <img src="images/homme/accessoires/montre1.jpg" alt="Men Watch">
+                </div>
+                <div class="product-info">
+                    <h3>Men Watch</h3>
+                    <p>₹9,000</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Men Watch',price:9000})">Add</button>
+                        <button class="pay" onclick="payNow('Men Watch',9000)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card homme">
+                <div class="product-image">
+                    <img src="images/homme/accessoires/sac1.jpg" alt="Men Bag">
+                </div>
+                <div class="product-info">
+                    <h3>Men Bag</h3>
+                    <p>₹5,400</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Men Bag',price:5400})">Add</button>
+                        <button class="pay" onclick="payNow('Men Bag',5400)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WOMEN -->
+            <div class="product-card femme">
+                <div class="product-image">
+                    <img src="images/femme/accessoires/sac1.jpg" alt="Women Bag">
+                </div>
+                <div class="product-info">
+                    <h3>Women Bag</h3>
+                    <p>₹4,500</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Women Bag',price:4500})">Add</button>
+                        <button class="pay" onclick="payNow('Women Bag',4500)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card femme">
+                <div class="product-image">
+                    <img src="images/femme/accessoires/bijoux1.jpg" alt="Women Jewelry">
+                </div>
+                <div class="product-info">
+                    <h3>Women Jewelry</h3>
+                    <p>₹1,800</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Women Jewelry',price:1800})">Add</button>
+                        <button class="pay" onclick="payNow('Women Jewelry',1800)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card femme">
+                <div class="product-image">
+                    <img src="images/femme/accessoires/montre1.jpg" alt="Women Watch">
+                </div>
+                <div class="product-info">
+                    <h3>Women Watch</h3>
+                    <p>₹8,400</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Women Watch',price:8400})">Add</button>
+                        <button class="pay" onclick="payNow('Women Watch',8400)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KIDS -->
+            <div class="product-card enfants">
+                <div class="product-image">
+                    <img src="images/enfants/accessoires/sac1.jpg" alt="Kids Bag">
+                </div>
+                <div class="product-info">
+                    <h3>Kids Bag</h3>
+                    <p>₹2,400</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Bag',price:2400})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Bag',2400)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card enfants">
+                <div class="product-image">
+                    <img src="images/enfants/accessoires/casquette1.jpg" alt="Kids Cap">
+                </div>
+                <div class="product-info">
+                    <h3>Kids Cap</h3>
+                    <p>₹900</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Cap',price:900})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Cap',900)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card enfants">
+                <div class="product-image">
+                    <img src="images/enfants/accessoires/montre1.jpg" alt="Kids Watch">
+                </div>
+                <div class="product-info">
+                    <h3>Kids Watch</h3>
+                    <p>₹2,100</p>
+                    <div class="product-actions">
+                        <button onclick="addToCart({name:'Kids Watch',price:2100})">Add</button>
+                        <button class="pay" onclick="payNow('Kids Watch',2100)">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>AJ COLLECTION</h3>
+                <p>Simple. Classy. Trendy.<br>Fashion for everyone.</p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="homme.html">Men</a></li>
+                    <li><a href="femme.html">Women</a></li>
+                    <li><a href="enfant.html">Kids</a></li>
+                    <li><a href="panier.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Information</h4>
+                <ul>
+                    <li>Fast delivery</li>
+                    <li>Easy returns</li>
+                    <li>Secure payment</li>
+                    <li><a href="login.html">My account</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Contact</h4>
+                <p>📱 WhatsApp<br>
+                    <a href="https://wa.me/919886400949">+91 98864 00949</a>
+                </p>
+                <p>✉️ Email<br>contact@ajcollection.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 AJ COLLECTION – All rights reserved
+        </div>
+    </footer>
+
+    <script src="accessoires.js"></script>
+    <script src="produits.js"></script>
+
+</body>
+
+</html>

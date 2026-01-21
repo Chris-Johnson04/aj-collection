@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment – AJ COLLECTION</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paiement.css">
+</head>
+
+<body>
+
+    <div class="pay-box">
+        <h1>AJ COLLECTION</h1>
+
+        <p class="total">
+            Total to pay:
+            <strong>₹<span id="amount">0</span></strong>
+        </p>
+
+        <button onclick="pay('Mobile Payment')">Mobile Payment</button>
+        <button onclick="pay('Credit / Debit Card')">Card Payment</button>
+
+        <p class="note">Secure payment (simulation)</p>
+    </div>
+
+    <script src="paiement.js"></script>
+</body>
+
+</html>

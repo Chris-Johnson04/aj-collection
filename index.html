@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AJ COLLECTION – Simple. Classy. Trendy.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Accueil.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <h1 class="logo">AJ COLLECTION</h1>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="panier.html">🛒</a>
+            <a href="login.html" class="icon-btn">👤</a>
+        </div>
+    </header>
+
+    <section class="hero-intro" id="home">
+        <h2><b style="color:#ff008c;">AJ COLLECTION</b> – Simple. Classy. Trendy.</h2>
+        <p>Welcome to AJ COLLECTION, where fashion is designed for men, women, and children of all ages.</p>
+    </section>
+
+    <section class="slider" id="categories">
+        <h2>Categories</h2>
+        <div class="slider-track">
+            <a class="slide" href="homme.html">
+                <img src="images/1.jpg" alt="Men Collection">
+                <div class="slide-text">
+                    <h3>Men</h3>
+                    <p>Street, casual & classy</p>
+                </div>
+            </a>
+
+            <a class="slide" href="femme.html">
+                <img src="images/2.jpg" alt="Women Collection">
+                <div class="slide-text">
+                    <h3>Women</h3>
+                    <p>Chic, trendy & comfy</p>
+                </div>
+            </a>
+
+            <a class="slide" href="enfant.html">
+                <img src="images/3.jpg" alt="Kids Collection">
+                <div class="slide-text">
+                    <h3>Kids</h3>
+                    <p>Cool looks for little ones</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="slider" id="new">
+        <h2>New Arrivals</h2>
+        <div class="slider-track">
+            <a class="slide" href="nouveauté_homme.html">
+                <img src="images/4.jpg" alt="New Men">
+                <div class="slide-text">
+                    <h3>Men New Arrivals</h3>
+                    <p>Latest AJ pieces</p>
+                </div>
+            </a>
+
+            <a class="slide" href="nouveauté_femme.html">
+                <img src="images/5.jpg" alt="New Women">
+                <div class="slide-text">
+                    <h3>Women New Arrivals</h3>
+                    <p>Must-have styles</p>
+                </div>
+            </a>
+
+            <a class="slide" href="nouveauté_enfant.html">
+                <img src="images/6.jpg" alt="New Kids">
+                <div class="slide-text">
+                    <h3>Kids New Arrivals</h3>
+                    <p>Fun & comfortable</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Clothing • Shoes • Accessories</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <a href="vetements.html">
+                    <img src="images/7.jpg" alt="Clothing">
+                </a>
+                <h3>Clothing</h3>
+                <p>From ₹2,250</p>
+                <button onclick="location.href='vetements.html'">View more</button>
+            </div>
+
+            <div class="product-card">
+                <a href="chaussures.html">
+                    <img src="images/8.jpg" alt="Shoes">
+                </a>
+                <h3>Shoes</h3>
+                <p>From ₹3,000</p>
+                <button onclick="location.href='chaussures.html'">View more</button>
+            </div>
+
+            <div class="product-card">
+                <a href="accessoires.html">
+                    <img src="images/9.jpg" alt="Accessories">
+                </a>
+                <h3>Accessories</h3>
+                <p>From ₹1,050</p>
+                <button onclick="location.href='accessoires.html'">View more</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About AJ Collection</h2>
+        <p>AJ COLLECTION creates stylish fashion combining simplicity, elegance, and trend.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>AJ COLLECTION</h3>
+                <p>Simple. Classy. Trendy.</p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="homme.html">Men</a></li>
+                    <li><a href="femme.html">Women</a></li>
+                    <li><a href="enfant.html">Kids</a></li>
+                    <li><a href="panier.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Information</h4>
+                <ul>
+                    <li>Fast delivery</li>
+                    <li>Easy returns</li>
+                    <li>Secure payment</li>
+                    <li><a href="login.html">My account</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Contact</h4>
+                <p>📱 WhatsApp<br>+91 98864 00949</p>
+                <p>✉️ Email<br>contact@ajcollection.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 AJ COLLECTION – All rights reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>

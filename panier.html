@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cart – AJ COLLECTION</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produits.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>AJ COLLECTION</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="homme.html">Men</a>
+            <a href="femme.html">Women</a>
+            <a href="enfant.html">Kids</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Cart</h2>
+
+        <div id="cart-items"></div>
+
+        <h3 id="total"></h3>
+
+        <div class="cart-actions">
+            <button onclick="payAll()">Pay Now</button>
+            <button onclick="orderWhatsApp()">Order via WhatsApp</button>
+            <button onclick="clearCart()">Clear Cart</button>
+            <a href="index.html" class="back-link">← Continue shopping</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>AJ COLLECTION</h3>
+                <p>Simple. Classy. Trendy.<br>Fashion for men, women and kids.</p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="homme.html">Men</a></li>
+                    <li><a href="femme.html">Women</a></li>
+                    <li><a href="enfant.html">Kids</a></li>
+                    <li><a href="panier.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Information</h4>
+                <ul>
+                    <li>Fast delivery</li>
+                    <li>Easy returns</li>
+                    <li>Secure payment</li>
+                    <li><a href="login.html">My account</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Contact</h4>
+                <p>📱 WhatsApp<br>
+                    <a href="https://wa.me/919886400949">+91 98864 00949</a>
+                </p>
+                <p>✉️ Email<br>contact@ajcollection.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 AJ COLLECTION – All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        /* ===== LOAD CART ===== */
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const container = document.getElementById("cart-items");
+        const totalEl = document.getElementById("total");
+        let total = 0;
+
+        if (cart.length === 0) {
+            container.innerHTML = "<p>Your cart is empty.</p>";
+        } else {
+            cart.forEach(item => {
+                const div = document.createElement("div");
+                div.textContent = `${item.name} — ₹${item.price}`;
+                container.appendChild(div);
+                total += item.price;
+            });
+        }
+
+        totalEl.textContent = "Total: ₹" + total;
+
+        /* ===== ACTIONS ===== */
+        function payAll() {
+            if (cart.length === 0) return alert("Cart is empty.");
+            alert("Payment simulated\n\nTotal: ₹" + total);
+            localStorage.removeItem("cart");
+            location.reload();
+        }
+
+        function clearCart() {
+            localStorage.removeItem("cart");
+            location.reload();
+        }
+
+        function orderWhatsApp() {
+            if (cart.length === 0) return alert("Cart is empty.");
+
+            let message = "Hello, I would like to order:%0A";
+            cart.forEach(item => {
+                message += `- ${item.name} (₹${item.price})%0A`;
+            });
+            message += `%0ATotal: ₹${total}`;
+
+            const phone = "919886400949";
+            const url = `https://wa.me/${phone}?text=${message}`;
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+
+</html>

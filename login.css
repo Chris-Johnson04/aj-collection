@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #e2e0d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+  color: #222;
+}
+
+.auth-container {
+  background: #f3f1eb;
+  border: 1px solid #c9c4b8;
+  border-radius: 16px;
+  padding: 30px 26px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.auth-container h1 {
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
+  margin-bottom: 20px;
+}
+
+/* Onglets */
+.tabs {
+  display: flex;
+  background: #ddd9d0;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 999px;
+  color: #444;
+}
+
+.tab.active {
+  background: #3b3b3f;
+  color: #fff;
+}
+
+/* Formulaires */
+.tab-content {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tab-content.active {
+  display: flex;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #c9c4b8;
+  background: #f5f3ec;
+  font-size: 0.95rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a7a293;
+}
+
+button[type="submit"] {
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+  background: #3b3b3f;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #2a2a2d;
+}
