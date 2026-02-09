@@ -40,7 +40,7 @@ function orderWhatsApp() {
     return;
   }
 
-  let message = "Hi! I would like to order :%0A";
+  let message = "Hello, I would like to order :%0A";
   cart.forEach(item => {
     message += `- ${item.name} (${item.price} XAF)%0A`;
   });
@@ -50,4 +50,5 @@ function orderWhatsApp() {
   const url = `https://wa.me/${phone}?text=${message}`;
   window.open(url, "_blank");
 }
+
 
