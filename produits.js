@@ -16,12 +16,12 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 function addToCart(product) {
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
-  alert("Article ajouté au panier");
+  alert("Item added to cart");
 }
 
 // ===== PAIEMENT DIRECT =====
 function payNow(name, price) {
-  alert(`Paiement simulé\n\nProduit : ${name}\nPrix : ${price} XAF`);
+  alert(`Simulated payment\n\nProduit : ${name}\nPrix : ${price} XAF`);
 }
 
 // OUVRIR IMAGE
@@ -36,3 +36,4 @@ document.querySelectorAll('.product-image img').forEach(img => {
 function closeLightbox() {
   document.getElementById('lightbox').style.display = 'none';
 }
+
