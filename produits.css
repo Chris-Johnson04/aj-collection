@@ -23,6 +23,7 @@ body {
 .site-header h1 {
   letter-spacing: 0.2em;
   font-size: 1.1rem;
+  color: #ff008c;
 }
 
 .site-header nav a {
@@ -243,3 +244,4 @@ h2 {
   color: #fff;
   cursor: pointer;
 }
+
